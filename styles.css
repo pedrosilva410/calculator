@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 50%;
+    height: 60%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr [col-start]);
+    grid-template-rows: repeat(6, 1fr [row-start]);
+    gap: 2%;
+}
+
+/* input and buttons */
+#operation-input{
+grid-area: 1/1/1/6;
+}
+
+#lp{
+    grid-area: 2/1/2/1;
+}
+#rp{
+    grid-area: 2/2/2/2;
+}
+#pt{
+    grid-area: 2/3/2/3;
+}
+#ac{
+    grid-area: 2/4/2/4;
+}
+#seven{
+    grid-area: 3/1/3/1;
+}
+#eight{
+    grid-area: 3/2/3/2;
+}
+#nine{
+    grid-area: 3/3/3/3;
+}
+#dv{
+    grid-area: 3/4/3/4;
+}
+#four{
+    grid-area: 4/1/4/1;
+}
+#five{
+    grid-area: 4/2/4/2;
+}
+#six{
+    grid-area: 4/3/4/3;
+}
+#x{
+    grid-area: 4/4/4/4;
+}
+#one{
+    grid-area: 5/1/5/1;
+}
+#two{
+    grid-area: 5/2/5/2;
+}
+#three{
+    grid-area: 5/3/5/3;
+}
+#mn{
+    grid-area: 5/4/5/4;
+}
+#zero{
+    grid-area: 6/1/6/1;
+}
+#dot{
+    grid-area: 6/2/6/2;
+}
+#eq{
+    grid-area: 6/3/6/3;
+}
+#pl{
+    grid-area: 6/4/6/4;
+}
+
+/* input and buttons */
+
+
+
+footer{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
