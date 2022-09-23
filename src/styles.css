@@ -24,8 +24,6 @@ html, body{
 }
 
 body{
-    height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -53,7 +51,6 @@ main{
     height: 60%;
     display: grid;
     grid-template-columns: repeat(4, 1fr [col-start]);
-    grid-template-rows: repeat(6, 1fr [row-start]);
     gap: 2%;
 }
 
@@ -186,6 +183,10 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#pedroLink{
+    color: #E8E8E8;
 }
 
 
