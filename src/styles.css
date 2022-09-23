@@ -58,7 +58,7 @@ main{
 }
 
 /* input and buttons */
-#operation-input{
+#operationInput{
     width: 96%;
     text-decoration: none;
     border: 1px solid #000;
@@ -75,6 +75,14 @@ main{
     color: #E8E8E8;
     border: 2px solid #E8E8E8;
     border-radius: 4px;
+    transition: all 350ms;
+}
+
+.operations:hover{
+    background-color: #E8E8E8;
+    border: 2px solid #969696;
+    color: #969696;
+    cursor: pointer;
 }
 
 .numbers{
@@ -83,18 +91,27 @@ main{
     color: #E8E8E8;
     border: 2px solid #E8E8E8;
     border-radius: 4px;
+    transition: all 350ms;
 }
 
-#lp{
+.numbers:hover{
+    background-color: #E8E8E8;
+    border: 2px solid #363636;
+    color: #363636;
+    cursor: pointer;
+}
+
+
+#leftParenthesis{
     grid-area: 2/1/2/1;
 }
-#rp{
+#rightParenthesis{
     grid-area: 2/2/2/2;
 }
-#pt{
+#rest{
     grid-area: 2/3/2/3;
 }
-#ac{
+#allClear{
     grid-area: 2/4/2/4;
 }
 #seven{
@@ -106,7 +123,7 @@ main{
 #nine{
     grid-area: 3/3/3/3;
 }
-#dv{
+#division{
     grid-area: 3/4/3/4;
 }
 #four{
@@ -118,7 +135,7 @@ main{
 #six{
     grid-area: 4/3/4/3;
 }
-#x{
+#multiplication{
     grid-area: 4/4/4/4;
 }
 #one{
@@ -130,7 +147,7 @@ main{
 #three{
     grid-area: 5/3/5/3;
 }
-#mn{
+#minus{
     grid-area: 5/4/5/4;
 }
 #zero{
@@ -139,15 +156,23 @@ main{
 #dot{
     grid-area: 6/2/6/2;
 }
-#eq{
+#equals{
     font-size: 200%;
     background-color: #3E49B8;
     color: #E8E8E8;
     border: 2px solid #E8E8E8;
     border-radius: 4px;
+    transition: all 350ms;
     grid-area: 6/3/6/3;
 }
-#pl{
+
+#equals:hover{
+    background-color: #E8E8E8;
+    color: #3E49B8;
+    border: 2px solid #3E49B8;
+    cursor: pointer;
+}
+#plus{
     grid-area: 6/4/6/4;
 }
 

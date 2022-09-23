@@ -1,42 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/styles.css">
     <title>Calculator</title>
 </head>
+
 <body>
+
     <header>
+
         <h1>Calculator</h1>
         <h3>Have fun with math!</h3>
+
     </header>
+
     <main>
-        <input id="operation-input" type="number">
-            <button id="lp" class="operations" type="button">(</button>
-            <button id="rp" class="operations" type="button">)</button>
-            <button id="pt" class="operations" type="button">%</button>
-            <button id="ac" class="operations" type="button">AC</button>
-            <button id="seven" class="numbers" type="button">7</button>
-            <button id="eight" class="numbers" type="button">8</button>
-            <button id="nine" class="numbers" type="button">9</button>
-            <button id="dv" class="operations" type="button">&#247</button>
-            <button id="four" class="numbers" type="button">4</button>
-            <button id="five" class="numbers" type="button">5</button>
-            <button id="six" class="numbers" type="button">6</button>
-            <button id="x" class="operations" type="button">x</button>
-            <button id="one" class="numbers" type="button">1</button>
-            <button id="two" class="numbers" type="button">2</button>
-            <button id="three" class="numbers" type="button">3</button>
-            <button id="mn" class="operations" type="button">-</button>
-            <button id="zero" class="numbers" type="button">0</button>
-            <button id="dot" class="numbers" type="button">.</button>
-            <button id="eq" type="button">=</button>
-            <button id="pl" class="operations" type="button">+</button>
+
+        <input id="operationInput" type="text">
+
+        <button id="leftParenthesis" class="operations" type="button">(</button>
+        <button id="rightParenthesis" class="operations" type="button">)</button>
+        <button id="rest" class="operations" type="button">%</button>
+        <button id="allClear" class="operations" type="button">AC</button>
+        <button id="seven" class="numbers" type="button">7</button>
+        <button id="eight" class="numbers" type="button">8</button>
+        <button id="nine" class="numbers" type="button">9</button>
+        <button id="division" class="operations" type="button">/</button>
+        <button id="four" class="numbers" type="button">4</button>
+        <button id="five" class="numbers" type="button">5</button>
+        <button id="six" class="numbers" type="button">6</button>
+        <button id="multiplication" class="operations" type="button">x</button>
+        <button id="one" class="numbers" type="button">1</button>
+        <button id="two" class="numbers" type="button">2</button>
+        <button id="three" class="numbers" type="button">3</button>
+        <button id="minus" class="operations" type="button">-</button>
+        <button id="zero" class="numbers" type="button">0</button>
+        <button id="dot" class="numbers" type="button">.</button>
+        <button id="equals" type="button">=</button>
+        <button id="plus" class="operations" type="button">+</button>
+
     </main>
+
     <footer>
         <p>coded with love by Pedro &#9829</p>
     </footer>
+
 </body>
+
+<script src="src/index.js"></script>
+
 </html>
