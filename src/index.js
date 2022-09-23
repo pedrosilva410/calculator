@@ -43,13 +43,13 @@ function updateOperation(operand) {
   }
   
     input.value += operand;
-  }
+  } //used to write in the input
 
 function allclear() {
     input.value='';
-}
+} //used to clear the input
 
 function solve() {
   console.log(eval(input.value));
   input.value=eval(input.value);
-}
+} //used to solve the operation
