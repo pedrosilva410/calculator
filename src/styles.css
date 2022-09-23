@@ -75,6 +75,7 @@ main{
     color: #E8E8E8;
     border: 2px solid #E8E8E8;
     border-radius: 4px;
+    transition: all 350ms;
 }
 
 .operations:hover{
@@ -90,6 +91,7 @@ main{
     color: #E8E8E8;
     border: 2px solid #E8E8E8;
     border-radius: 4px;
+    transition: all 350ms;
 }
 
 .numbers:hover{
@@ -160,6 +162,7 @@ main{
     color: #E8E8E8;
     border: 2px solid #E8E8E8;
     border-radius: 4px;
+    transition: all 350ms;
     grid-area: 6/3/6/3;
 }
 

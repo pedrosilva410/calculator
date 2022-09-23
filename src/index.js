@@ -1,4 +1,4 @@
-let input = document.getElementById('operationInput');
+const input = document.getElementById('operationInput');
 
 document.getElementById('zero').addEventListener('click', ()=>updateOperation('0'));
 document.getElementById('one').addEventListener('click', ()=>updateOperation('1'));
