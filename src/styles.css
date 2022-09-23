@@ -58,7 +58,7 @@ main{
 }
 
 /* input and buttons */
-#operation-input{
+#operationInput{
     width: 96%;
     text-decoration: none;
     border: 1px solid #000;
@@ -100,16 +100,16 @@ main{
 }
 
 
-#leftparenthesis{
+#leftParenthesis{
     grid-area: 2/1/2/1;
 }
-#rightparenthesis{
+#rightParenthesis{
     grid-area: 2/2/2/2;
 }
 #rest{
     grid-area: 2/3/2/3;
 }
-#allclear{
+#allClear{
     grid-area: 2/4/2/4;
 }
 #seven{
