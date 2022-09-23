@@ -16,15 +16,40 @@ document.getElementById('leftParenthesis').addEventListener('click', ()=>updateO
 document.getElementById('rightParenthesis').addEventListener('click', ()=>updateOperation(')'));
 document.getElementById('rest').addEventListener('click', ()=>updateOperation('%'));
 document.getElementById('division').addEventListener('click', ()=>updateOperation('/'));
-document.getElementById('multiplication').addEventListener('click', ()=>updateOperation('x'));
+document.getElementById('multiplication').addEventListener('click', ()=>updateOperation('*'));
 document.getElementById('minus').addEventListener('click', ()=>updateOperation('-'));
 document.getElementById('plus').addEventListener('click', ()=>updateOperation('+'));
 document.getElementById('allClear').addEventListener('click', ()=>allclear());
+document.getElementById('equals').addEventListener('click', ()=>solve())
 
 function updateOperation(operand) {
+  if(input.value=='' && operand=='%'){
+    alert('You can\'t do that');
+    return;
+  }
+  if(input.value=='' && operand=='/'  || input.value=='' && operand=='*'|| input.value=='' && operand=='+') {
+    input.value='0' + operand;
+    return;
+  }
+
+  if(operand=='%' && operand==input.value.slice(-1) || operand=='/' && operand==input.value.slice(-1) || operand=='*' && operand==input.value.slice(-1) || operand=='+' && operand==input.value.slice(-1)) {
+    alert('you can\'t repeat that');
+    return;
+  }
+
+  if((input.value.slice(-1)=='%' || input.value.slice(-1)=='/' || input.value.slice(-1)=='*' || input.value.slice(-1)=='-' || input.value.slice(-1)=='+') && (operand=='%' || operand=='/' || operand=='*' || operand=='+' || operand=='-')) {
+    alert('you can\'t do that');
+    return;
+  }
+  
     input.value += operand;
   }
 
 function allclear() {
     input.value='';
+}
+
+function solve() {
+  console.log(eval(input.value));
+  input.value=eval(input.value);
 }
