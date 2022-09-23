@@ -23,7 +23,7 @@ document.getElementById('allClear').addEventListener('click', () => allclear());
 document.getElementById('equals').addEventListener('click', () => solve())
 
 function updateOperation(operand) {
-  if (input.value == '' && operand == '%') {
+  if (input.value === '' && operand === '%') {
     alert("You can't do that");
     return;
   }
@@ -37,7 +37,7 @@ function updateOperation(operand) {
     return;
   }
 
-  if ((input.value.slice(-1) == '%' || input.value.slice(-1) === '/' || input.value.slice(-1) === '*' || input.value.slice(-1) === '-' || input.value.slice(-1) === '+') && (operand === '%' || operand === '/' || operand === '*' || operand === '+' || operand === '-')) {
+  if ((input.value.slice(-1) === '%' || input.value.slice(-1) === '/' || input.value.slice(-1) === '*' || input.value.slice(-1) === '-' || input.value.slice(-1) === '+') && (operand === '%' || operand === '/' || operand === '*' || operand === '+' || operand === '-')) {
     alert("you can\'t do that");
     return;
   }
