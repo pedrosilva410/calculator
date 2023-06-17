@@ -19,7 +19,7 @@ document.getElementById('division').addEventListener('click', () => updateOperat
 document.getElementById('multiplication').addEventListener('click', () => updateOperation('*'));
 document.getElementById('minus').addEventListener('click', () => updateOperation('-'));
 document.getElementById('plus').addEventListener('click', () => updateOperation('+'));
-document.getElementById('allClear').addEventListener('click', () => allclear());
+document.getElementById('allClear').addEventListener('click', () => allClear());
 document.getElementById('equals').addEventListener('click', () => solve())
 
 function updateOperation(operand) {
@@ -45,7 +45,7 @@ function updateOperation(operand) {
   input.value += operand;
 } //used to write in the input
 
-function allclear() {
+function allClear() {
   input.value = '';
 } //used to clear the input
 
