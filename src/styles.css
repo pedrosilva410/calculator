@@ -1,142 +1,131 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/* src/styles.css */
 
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text for contrast */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   margin: 0;
 }
 
-/* Firefox */
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #171717;
-  color: #fff;
-}
-
+/* Header */
 header {
-  width: 100%;
-  height: 15%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-h1 {
-  font-size: 60px;
+  text-align: center;
   margin-bottom: 20px;
 }
 
+header h1 {
+  font-size: 2.5rem;
+  color: #bb86fc; /* Vibrant purple accent */
+}
+
+header h3 {
+  font-size: 1.2rem;
+  color: #a0a0a0;
+}
+
+/* Main */
 main {
-  width: 50%;
-  height: 60%;
-  display: grid;
+  width: 320px;
+  padding: 20px;
+  background-color: #1e1e1e; /* Slightly lighter background for contrast */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Input */
+#operationInput {
+  width: 100%;
+  height: 50px;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #e0e0e0;
+  text-align: right;
+}
+
+/* Button Container */
+#buttonContainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  gap: 2%;
+  gap: 10px;
 }
 
-/* input and buttons */
-#operationInput {
-  grid-area: 1 / 1 / 2 / 5;
-  text-decoration: none;
-  border: 1px solid #000;
-  background-color: #e8e8e8;
-  border-radius: 4px;
-  padding-left: 2%;
-  font-size: 300%;
-}
-
-.operations {
-  font-size: 200%;
-  background-color: #969696;
-  color: #e8e8e8;
-  border: 2px solid #e8e8e8;
-  border-radius: 4px;
-  transition: all 350ms;
-}
-
-.operations:hover {
-  background-color: #e8e8e8;
-  border: 2px solid #969696;
-  color: #969696;
+/* Buttons */
+button {
+  height: 50px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-.numbers {
-  font-size: 200%;
-  background-color: #363636;
-  color: #e8e8e8;
-  border: 2px solid #e8e8e8;
-  border-radius: 4px;
-  transition: all 350ms;
+button.numbers {
+  background-color: #292929;
+  color: #e0e0e0;
 }
 
-.numbers:hover {
-  background-color: #e8e8e8;
-  border: 2px solid #363636;
-  color: #363636;
-  cursor: pointer;
+button.operations {
+  background-color: #383838;
+  color: #bb86fc;
 }
 
-#equals {
-  font-size: 200%;
-  background-color: #3e49b8;
-  color: #e8e8e8;
-  border: 2px solid #e8e8e8;
-  border-radius: 4px;
-  transition: all 350ms;
+button[type="button"]:hover {
+  background-color: #444;
+  transform: translateY(-2px);
 }
 
-#equals:hover {
-  background-color: #e8e8e8;
-  color: #3e49b8;
-  border: 2px solid #3e49b8;
-  cursor: pointer;
+button[type="button"]:active {
+  background-color: #555;
+  transform: translateY(0);
 }
-/* input and buttons */
 
+/* Equals Button */
+button[data-value="="] {
+  background-color: #bb86fc;
+  color: #1e1e1e;
+  grid-column: span 2;
+}
+
+button[data-value="="]:hover {
+  background-color: #a075f5;
+}
+
+button[data-value="="]:active {
+  background-color: #8a63db;
+}
+
+/* Footer */
 footer {
-  width: 100%;
-  height: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 20px;
+  text-align: center;
 }
 
-#pedroLink {
-  color: #e8e8e8;
+footer p {
+  font-size: 0.9rem;
+  color: #a0a0a0;
 }
 
-@media (max-width: 1000px) {
-  main {
-    width: 60%;
-  }
+footer a {
+  color: #bb86fc;
+  text-decoration: none;
 }
 
-@media (max-width: 600px) {
-  main {
-    width: 80%;
-  }
+footer a:hover {
+  text-decoration: underline;
 }
